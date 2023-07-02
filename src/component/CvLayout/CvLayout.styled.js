@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-export const BoxWindow = styled.header`
+export const BoxWindow = styled.div`
 max-width: 1782px;
 padding: 69px;
 margin:0 auto;
-height: 100lvh;
-
+height: 85lvh;
+display: flex;
+  flex-direction: column;
 `;
 
 export const Header = styled.header`
@@ -29,6 +30,7 @@ border-left: 1px solid #1e2d3d;
 
 &:first-child {
   border-left: none;
+  width:311px;
   }
 &:last-child {
     margin-left: auto;
@@ -78,5 +80,15 @@ export const LinkPage = styled(NavLink)`
 `;
 
 export const LinkName = styled(LinkPage)`
-  width: 320px;
+
 `;
+
+export const Main = styled.main`
+position:relative;
+  flex: 1 1 auto;
+  border-left: 1px solid #1E2D3D;
+  border-right: 1px solid #1E2D3D;
+  background: #011627;
+`;
+
+
