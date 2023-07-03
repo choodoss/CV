@@ -20,32 +20,18 @@ position:relative;
 height: 100%;
 `;
 
-export const BlueLight = styled.div`
-position:absolute;
-z-index:3;
-top: 0;
-right:0;
-width: 454px;
-height: 492px;
-transform: rotate(13.508deg);
-opacity: 0.4;
-background-image: url(../../img/Blue.png);
-background-size:cover;
-background-repeat; no-repeat;
-`;
-
 export const GreenLight = styled.div`
-position:absolute;
-z-index:999;
-top: 158px;
-left:220px;
-width: 454px;
-height: 492px;
-transform: rotate(-94.305deg);
-opacity: 0.4;
-background-image:url(../../img/Blue.png);
-background-size:cover;
-background-repeat; no-repeat;
+  position: absolute;
+  z-index: 999;
+  top: 64px;
+  right: 352px;
+  width: 454px;
+  height: 492px;
+  transform: rotate(-94.305deg);
+  opacity: 0.4;
+  background-image: url(./img/Green.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 `;
 
 export const Text = styled.span`

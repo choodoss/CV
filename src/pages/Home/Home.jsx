@@ -3,10 +3,10 @@ import { Text, DevName, DevProfile, TextDownProfile, TextViolet, TextGreen, Link
 const Home = () => {
 
     return <Section>
-        <BlueLight>
-        </BlueLight>
-        <GreenLight>
-        </GreenLight>
+        {/* <BlueLight>
+        </BlueLight> */}
+        {/* <GreenLight>
+        </GreenLight> */}
         <Container>
             <HeadProfile>
                 <Text>Hi all. I am</Text>

@@ -1,16 +1,16 @@
 import { Outlet } from "react-router-dom";
 import { BoxWindow, Header, LinkItem, LinkList, LinkName, LinkPage, Nav, Main } from "./CvLayout.styled";
 import Footer from "../Foooter/Footer";
+import { Suspense } from "react";
 
 const CvLayout = () => {
-
     return (
         <>
             <BoxWindow>
                 <Header>
                     <Nav>
                         <LinkList>
-                            <LinkItem><LinkName to='/'>dmytro-khomenko</LinkName></LinkItem>
+                            <LinkItem><LinkName to='/' end="true">dmytro-khomenko</LinkName></LinkItem>
                             <LinkItem><LinkPage to='/'>_hello</LinkPage></LinkItem>
                             <LinkItem><LinkPage to='/about-me'>_about-me</LinkPage></LinkItem>
                             <LinkItem><LinkPage to='/projects'>_projects</LinkPage></LinkItem>
@@ -19,13 +19,12 @@ const CvLayout = () => {
                     </Nav>
                 </Header>
                 <Main>
-                    {/* <Suspense fallback={<Loader isLoad={true} />}> */}
-                    {/* <Loader /> */}
-                    <Outlet />
-                    {/* </Suspense> */}
+                    <Suspense >
+                        <Outlet />
+                    </Suspense>
                 </Main>
                 <Footer />
-            </BoxWindow>
+            </BoxWindow >
         </>
     );
 };
