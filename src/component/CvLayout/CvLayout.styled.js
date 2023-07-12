@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 export const BoxWindow = styled.div`
 max-width: 1782px;
-padding: 69px;
+padding: 5lvh;
 margin:0 auto;
-height: 85lvh;
+height: 90lvh;
 display: flex;
   flex-direction: column;
 `;
@@ -64,8 +64,10 @@ export const LinkPage = styled(NavLink)`
     z-index: 999;
     border-radius: 2px;
     background-color: #fea55f;
-    opacity: 1;
+    opacity: 0;
     transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+    
+
   }
 
   &:hover,
@@ -77,6 +79,13 @@ export const LinkPage = styled(NavLink)`
       transform: scaleX(100%);
     }
   }
+  &.active{
+      color: #fff;
+      &::after {
+      opacity: 1;
+      transform: scaleX(100%);
+    }
+    }
 `;
 
 export const LinkName = styled(LinkPage)`
@@ -86,6 +95,7 @@ export const LinkName = styled(LinkPage)`
 export const Main = styled.main`
 position:relative;
   flex: 1 1 auto;
+  max-height: 100%;
   border-left: 1px solid #1E2D3D;
   border-right: 1px solid #1E2D3D;
   background: #011627;

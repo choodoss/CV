@@ -1,22 +1,20 @@
-import { Text, DevName, DevProfile, TextDownProfile, TextViolet, TextGreen, LinkOrange, Container, Section, TextList, HeadProfile, BlueLight, GreenLight } from "./Home.styled";
+import info from '../../info/info.json'
+import { useLangCv } from '../../hooks/useContext';
+import { Text, DevName, DevProfile, TextDownProfile, TextViolet, TextGreen, LinkOrange, Container, Section, TextList, HeadProfile } from "./Home.styled";
 
 const Home = () => {
-
+    const { selectedLang } = useLangCv();
     return <Section>
-        {/* <BlueLight>
-        </BlueLight> */}
-        {/* <GreenLight>
-        </GreenLight> */}
         <Container>
             <HeadProfile>
-                <Text>Hi all. I am</Text>
-                <DevName>Dmytro Khomenko</DevName>
-                <DevProfile>> Front-end developer</DevProfile>
+                <Text>{info.home.hiText[selectedLang]}</Text>
+                <DevName>{info.home.devName[selectedLang]}</DevName>
+                <DevProfile>{info.home.DevProfile[selectedLang]}</DevProfile>
             </HeadProfile>
             <TextList>
-                <TextDownProfile>complete the game to continue</TextDownProfile>
-                <TextDownProfile>you can also see it on my Github page</TextDownProfile>
-                <TextDownProfile><TextViolet>const</TextViolet><TextGreen> githubLink = </TextGreen><LinkOrange aria-label="Repositories on GitHub" href="https://github.com/choodoss" target="_blank">“https://github.com/choodoss”</LinkOrange></TextDownProfile>
+                <TextDownProfile>{info.home.TextDownProfile1[selectedLang]}</TextDownProfile>
+                <TextDownProfile>{info.home.TextDownProfile2[selectedLang]}</TextDownProfile>
+                <TextDownProfile><TextViolet>const</TextViolet><TextGreen> githubLink = </TextGreen><LinkOrange aria-label="Repositories on GitHub" href={info.home.TextDownProfileLink} target="_blank">{info.home.TextDownProfileLink}</LinkOrange></TextDownProfile>
             </TextList>
         </Container>
     </Section>

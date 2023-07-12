@@ -1,11 +1,11 @@
+import SubTitleList from "../SubTitleList/SubTitleList";
+
 const Education = () => {
 
     return (<>
-        <ul>
-            <li>sckool</li>
-            <li>coledg</li>
-        </ul>
+        <SubTitleList arg={['school', 'college', 'academy', 'courses']} />
     </>)
+
 };
 
 export default Education;

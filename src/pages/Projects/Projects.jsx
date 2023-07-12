@@ -1,9 +1,9 @@
 
-const Prjects = () => {
+const Projects = () => {
 
     return (<div><div>.........</div>
 
     </div>)
 };
 
-export default Prjects;
+export default Projects;
