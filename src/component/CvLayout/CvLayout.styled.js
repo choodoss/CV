@@ -58,7 +58,7 @@ export const LinkPage = styled(NavLink)`
     top: 100%;
     left: 0;
     height: 2px;
-    width: 101%;
+    width: 100%;
     transform: scaleX(0%);
     transform-origin: center;
     z-index: 999;
@@ -99,6 +99,8 @@ position:relative;
   border-left: 1px solid #1E2D3D;
   border-right: 1px solid #1E2D3D;
   background: #011627;
+  display: flex;
+  overflow: hidden;
 `;
 
 

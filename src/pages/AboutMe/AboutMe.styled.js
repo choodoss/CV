@@ -16,13 +16,13 @@ export const TitleIsHidden = styled.h2`
 export const Section = styled.section`
 display: flex;
 color: #607B96;
+flex-grow: 1;
 `;
 
 export const TitleActive = styled.li`
 color: #FFF;
 font-weight: 400;
 border-bottom: 1px solid #1E2D3D;
-border-right: 1px solid #1E2D3D;
 display: flex;
 align-items: center;
 padding:10px 0;
@@ -30,13 +30,20 @@ padding-left:14px;
 `;
 
 export const Aside = styled.aside`
-flex:0 1 312px;
+flex-basis:311px;
+flex-shrink: 0;
 `;
 
 export const TitleMenuList = styled.ul`
 padding-left:16px;
 `;
+export const OutletBox = styled.div`
+flex-grow: 1;
+display: flex;
+`;
 
 export const Box = styled.div`
-flex:1 1 700px;
+flex-basis: calc((100%) / 2);
+border-left: 1px solid #1E2D3D;
+overflow: hidden;
 `;

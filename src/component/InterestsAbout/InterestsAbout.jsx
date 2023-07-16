@@ -1,17 +1,22 @@
-import { TextAbout, Box, TitleAbout } from '../Bio/Bio.styled';
+import { TitleAbout } from '../Bio/Bio.styled';
+import { outletMacker } from '../Bio/OutletMacker/OutletMacker';
 
 const InterestsAbout = () => {
-    return (<>
-        <div><TitleAbout>interests</TitleAbout></div>
-        <Box>
-            <TextAbout>
-                Я захоплююся програмуванням, тому читаю відповідну літературу, останню книгу, яку я прочитав, була "You Don't Know JS: Up & Going" авторства Кайла Сімпсона, яка надала мені глибші знання JavaScript.
-                Мій смак в літературі не обмежується професійною літературою, у якості відпочинку люблю читати фентезі. Одна з улюблених книг - "The Name of the Wind" Патріка Ротфуса, захоплююча історія про пригоди та магію. Інша книга, що мені дуже сподобалася, - "The Black Company" Глена Кука, яка представляє темний світ війни та складні відносини.
-                Музика не є моєю пристрастю, коли пишу код віддаю перевагу класиці, а за кермом року.
-                Цікавлюсь новинами боксу, граю в більярд і шахи, хоча маю визнати, що любити грати не означає грати добре
-            </TextAbout>
-        </Box >
-    </>)
+    const text = "I prefer fantasy literature. The pinnacle of my preferences is Patrick Rothfuss's \"The Name of the Wind\" However, I also enjoy classic works by Alexandre Dumas, especially \"The Countess of Monsoreau.\" Lately, I have been focusing on professional literature, such as Kyle Simpson's \"You Don't Know JS: Up & Going.\" \r Movies are my weakness. Horror films scare me, so I prefer movies from various genres, excluding horror. I particularly love science fiction. \r Whenever possible, I play \"Knack 2\" on PlayStation or other games with my son. I have an interest in chess (not an expert). \r And finally, I hope to resume regular workouts at the gym, although currently, it's just my future plans."
+
+
+    const type = 'bio'
+    const result = outletMacker(text, type);
+
+
+    return (
+        <>
+            <div>
+                <TitleAbout>Interest</TitleAbout>
+            </div>
+            {result}
+        </>
+    );
 };
 
 export default InterestsAbout;

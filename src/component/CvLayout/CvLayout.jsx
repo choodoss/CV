@@ -1,11 +1,9 @@
-// import info from '../../info/info.json'
 import { Outlet } from "react-router-dom";
 import { BoxWindow, Header, LinkItem, LinkList, LinkName, LinkPage, Nav, Main } from "./CvLayout.styled";
 import Footer from "../Foooter/Footer";
-// import { useLangCv } from '../../hooks/useContext';
 
 const CvLayout = () => {
-    // const { selectedLang } = useLangCv();
+
 
     return (
         <>
@@ -31,3 +29,4 @@ const CvLayout = () => {
 };
 
 export default CvLayout;
+

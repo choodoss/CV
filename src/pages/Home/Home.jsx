@@ -1,20 +1,18 @@
-import info from '../../info/info.json'
-import { useLangCv } from '../../hooks/useContext';
 import { Text, DevName, DevProfile, TextDownProfile, TextViolet, TextGreen, LinkOrange, Container, Section, TextList, HeadProfile } from "./Home.styled";
 
 const Home = () => {
-    const { selectedLang } = useLangCv();
+
     return <Section>
         <Container>
             <HeadProfile>
-                <Text>{info.home.hiText[selectedLang]}</Text>
-                <DevName>{info.home.devName[selectedLang]}</DevName>
-                <DevProfile>{info.home.DevProfile[selectedLang]}</DevProfile>
+                <Text>Hi all. I am</Text>
+                <DevName>Dmytro Khomenko</DevName>
+                <DevProfile>> Front-end developer</DevProfile>
             </HeadProfile>
             <TextList>
-                <TextDownProfile>{info.home.TextDownProfile1[selectedLang]}</TextDownProfile>
-                <TextDownProfile>{info.home.TextDownProfile2[selectedLang]}</TextDownProfile>
-                <TextDownProfile><TextViolet>const</TextViolet><TextGreen> githubLink = </TextGreen><LinkOrange aria-label="Repositories on GitHub" href={info.home.TextDownProfileLink} target="_blank">{info.home.TextDownProfileLink}</LinkOrange></TextDownProfile>
+                <TextDownProfile>//this resume is built with react</TextDownProfile>
+                <TextDownProfile>//context is used for language switching</TextDownProfile>
+                <TextDownProfile><TextViolet>const</TextViolet><TextGreen> githubLink = </TextGreen><LinkOrange aria-label="Repositories on GitHub" href="https://github.com/choodoss" target="_blank">https://github.com/choodoss</LinkOrange></TextDownProfile>
             </TextList>
         </Container>
     </Section>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Nav = styled.nav`
+export const Nav = styled.footer`
 display:flex;
 align-items: center;
 border-radius: 0 0 8px 8px;
