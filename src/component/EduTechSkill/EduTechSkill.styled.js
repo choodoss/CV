@@ -9,7 +9,10 @@ export const EduBox = styled.div`
 export const Title = styled.p`
 
 `;
-export const Description = styled.p`
+export const List = styled.ul`
+
+`;
+export const Item = styled.li`
 
 `;
 export const DateTime = styled.span`

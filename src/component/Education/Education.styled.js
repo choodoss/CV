@@ -5,7 +5,8 @@ height:85%;
 padding: 40px;
 display:flex;
 flex-direction: column;
-justify-content:space-around;
+justify-content: center;
+gap: 20px;
 
 `;
 export const EduBox = styled.div`
