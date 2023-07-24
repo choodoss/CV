@@ -19,7 +19,7 @@ color: #607B96;
 flex-grow: 1;
 `;
 
-export const TitleActive = styled.li`
+export const TitleActive = styled.p`
 color: #FFF;
 font-weight: 400;
 border-bottom: 1px solid #1E2D3D;
@@ -29,13 +29,24 @@ padding:10px 0;
 padding-left:14px;
 `;
 
+export const TitleContact = styled(TitleActive)`
+border-top: 1px solid #1E2D3D;
+`;
+
 export const Aside = styled.aside`
 flex-basis:311px;
 flex-shrink: 0;
 `;
 
 export const TitleMenuList = styled.ul`
+display: flex;
+flex-direction: column;
+gap:8px;
+
+padding-top:16px;
+padding-bottom:16px;
 padding-left:16px;
+
 `;
 export const OutletBox = styled.div`
 flex-grow: 1;
@@ -47,3 +58,32 @@ flex-basis: calc((100%) / 2);
 border-left: 1px solid #1E2D3D;
 overflow: hidden;
 `;
+
+export const TitleContacList = styled.ul`
+padding-top:18px;
+padding-left:16px;
+display: flex;
+flex-direction: column;
+gap:9px;
+`;
+
+export const TitleContacItem = styled.li`
+
+`;
+
+export const ContactLink = styled.a`
+display: flex;
+gap:9px;
+align-items:center;
+
+color: #607B96;
+font-size: 16px;
+font-weight: 400;
+line-height: normal;
+transition: color 250ms ease-in-out;
+
+&:hover,&:focus{
+    color: #fff;
+}
+`;
+

@@ -1,3 +1,4 @@
+import { nanoid } from "nanoid";
 import { EduContainer, List, Title, Item } from "./EduTechSkill.styled";
 
 const EduTechSkill = () => {
@@ -5,20 +6,15 @@ const EduTechSkill = () => {
         <EduContainer>
             <Title>TECH SKILLS</Title>
             <List>
-                <Item>HTML5/CSS3/SASS</Item>
-                <Item>Responsive/Adaptive design</Item>
-                <Item>git</Item>
-                <Item>JavaScript</Item>
-                <Item>React</Item>
-                <Item>React Nativ</Item>
-                <Item>Redux</Item>
-                <Item>REST API</Item>
-                <Item>Webpack</Item>
-                <Item>Parcel</Item>
-                <Item>Node.js</Item>
-
+                {["HTML5/CSS3/SASS", "Responsive/Adaptive design", "git", "JavaScript", "React", "React Nativ", "Redux", "REST API", "Webpack", "Parcel", "Node.js"].map((item, index) => (
+                    <Item key={nanoid()}>
+                        <span>{index > 9 ? index : " " + index}: </span>
+                        {item}
+                    </Item>
+                ))}
             </List>
-        </EduContainer>)
+        </EduContainer>
+    );
 };
 
-export default Education;
+export default EduTechSkill;
