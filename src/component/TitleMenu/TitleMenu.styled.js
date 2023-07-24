@@ -17,6 +17,11 @@ color: inherit;
 font-weight: 400;
 display: flex;
 align-items: center;
+transition: color 250ms ease-in-out;
+&:hover,&:focus{
+  color:#fff
+}
+
 ${ArrowIcon}{
     transform: none; 
 }`;
@@ -31,11 +36,11 @@ color: inherit
 export const FolderIcon = styled.span`
 margin-right: 9px;
 color: ${({ color }) => {
-        if (color === 'orange') return '#E99287';
-        if (color === 'violet') return '#3A49A4';
-        if (color === 'green') return '#43D9AD';
-        if (color === 'blue') return '#3E91A8';
-        return '#E99287';
-    }};
+    if (color === 'orange') return '#E99287';
+    if (color === 'violet') return '#3A49A4';
+    if (color === 'green') return '#43D9AD';
+    if (color === 'blue') return '#3E91A8';
+    return '#E99287';
+  }};
 `;
 

@@ -42,17 +42,11 @@ const AboutMe = () => {
                 </div>
             </Aside>
             <OutletBox>
-                <Box>
-                    {actualTitle === 'bio' ? <Bio /> : null}
-                    {actualTitle === 'interests' ? <InterestsAbout /> : null}
-                    {actualTitle === 'education' ? <Education /> : null}
-                </Box>
-                <Box>
-                    {actualTitle === 'bio' ? <Bio /> : null}
-                    {actualTitle === 'interests' ? <InterestsAbout /> : null}
-                    {actualTitle === 'education' ? <EduTechSkill /> : null}
-                </Box>
-            </OutletBox>
+                {actualTitle === 'bio' ? <Box size={1}><Bio /></Box> : null}
+                {actualTitle === 'interests' ? <Box size={1}><InterestsAbout /></Box> : null}
+                {actualTitle === 'education' ? <Box size={2}><Education /></Box> : null}
+                {actualTitle === 'education' ? <Box size={2}><EduTechSkill /></Box> : null}
+            </OutletBox >
         </Section >)
 };
 
