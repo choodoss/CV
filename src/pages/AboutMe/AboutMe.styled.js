@@ -84,6 +84,7 @@ transition: color 250ms ease-in-out;
 
 &:hover,&:focus{
     color: #fff;
+    outline:none;
 }
 `;
 

@@ -9,10 +9,11 @@ import Bio from "../../component/Bio/Bio";
 import InterestsAbout from "../../component/InterestsAbout/InterestsAbout";
 import Education from "../../component/Education/Education";
 import EduTechSkill from "../../component/EduTechSkill/EduTechSkill";
+import Expirians from "../../component/Exprians/Exprians";
 
 const AboutMe = () => {
     const [actualTitle, setActualTitle] = useState(false);
-
+    console.log(actualTitle)
     const navigate = useNavigate();
     const { pathname } = useLocation();
 
@@ -31,7 +32,7 @@ const AboutMe = () => {
                     <TitleMenu color={'orange'} title={'bio'} />
                     <TitleMenu color={'green'} title={'interests'} />
                     <TitleMenu color={'blue'} title={'education'} />
-                    <TitleMenu color={'violet'} title={'exprians'} />
+                    <TitleMenu color={'violet'} title={'expirians'} />
                 </TitleMenuList>
                 <div>
                     <TitleContact><GoTriangleDown /> <span>contacts</span></TitleContact>
@@ -46,6 +47,7 @@ const AboutMe = () => {
                 {actualTitle === 'interests' ? <Box size={1}><InterestsAbout /></Box> : null}
                 {actualTitle === 'education' ? <Box size={2}><Education /></Box> : null}
                 {actualTitle === 'education' ? <Box size={2}><EduTechSkill /></Box> : null}
+                {actualTitle === 'expirians' ? <Box size={1}><Expirians /></Box> : null}
             </OutletBox >
         </Section >)
 };

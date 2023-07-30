@@ -8,19 +8,19 @@ const Animation = styled.div`
 `;
 
 const AnimatedOutlet = () => {
-    const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(false);
 
-    useEffect(() => {
-        setTimeout(() => {
-            setVisible(true);
-        }, 100);
-    }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setVisible(true);
+    }, 300);
+  }, []);
 
-    return (
-        <Animation $visible={visible ? 'true' : 'false'}>
-            <Outlet />
-        </Animation>
-    );
+  return (
+    <Animation $visible={visible ? 'true' : 'false'}>
+      <Outlet />
+    </Animation>
+  );
 };
 
 export default AnimatedOutlet;

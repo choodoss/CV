@@ -19,7 +19,8 @@ display: flex;
 align-items: center;
 transition: color 250ms ease-in-out;
 &:hover,&:focus{
-  color:#fff
+  color:#fff;
+  outline:none;
 }
 
 ${ArrowIcon}{

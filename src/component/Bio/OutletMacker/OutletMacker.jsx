@@ -3,12 +3,8 @@ import { TextItem, TextList, Box } from "./OutletMacker.styled";
 
 export const outletMacker = (text) => {
     const viewportWidth = document.documentElement.clientWidth;
-    console.log(viewportWidth)
     const charWidth = 13;
     const maxLength = Math.floor(((viewportWidth - 311) - (viewportWidth * 0.1)) / charWidth) - 6;
-
-    console.log(maxLength)
-    console.log((viewportWidth - 311) - (viewportWidth * 0.1))
     const result = [];
     let currentLineNumber = 1;
     let currentLine = "* ";

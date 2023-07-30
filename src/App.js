@@ -15,7 +15,7 @@ function App() {
           <Route path="bio" element={<Nothing />} />
           <Route path="interests" element={<Nothing />} />
           <Route path="education" element={<Nothing />} />
-          <Route path="exprians" element={<Nothing />} />
+          <Route path="expirians" element={<Nothing />} />
         </Route>
         <Route path="projects" element={< Projects />} />
         <Route path="contact-me" element={<ContactMe />} />
