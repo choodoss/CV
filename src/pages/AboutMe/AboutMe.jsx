@@ -13,7 +13,6 @@ import Expirians from "../../component/Exprians/Exprians";
 
 const AboutMe = () => {
     const [actualTitle, setActualTitle] = useState(false);
-    console.log(actualTitle)
     const navigate = useNavigate();
     const { pathname } = useLocation();
 

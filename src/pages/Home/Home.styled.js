@@ -16,7 +16,6 @@ export const TextList = styled.ul`
 `;
 
 export const Section = styled.section`
-position:relative;
 height: 100%;
 `;
 
@@ -67,4 +66,27 @@ font-weight: 500;
     color: #4D5BCE;
   }
 `;
+
+export const Green = styled.div`
+position:absolute;
+top:9.6%;
+right:26.6%;
+width: 454px;
+height: 492px;
+transform: rotate(-94.305deg);
+border-radius:100% 20%;
+background: #43D9AD;
+opacity: 0.4;
+filter: blur(5.5rem);
+`;
+
+export const Blue = styled(Green)`
+transform: rotate(13.508deg);
+top:28.5%;
+right:12.34%;
+transform: rotate(13.508deg);
+background: #4D5BCE;
+`;
+
+
 
