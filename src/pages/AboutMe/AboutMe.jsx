@@ -1,7 +1,6 @@
 
-import { TitleIsHidden, Section, TitleActive, Aside, Box, TitleMenuList, OutletBox, TitleContacItem, TitleContacList, TitleContact, ContactLink } from "./AboutMe.styled";
+import { TitleIsHidden, Section, TitleActive, Aside, Box, TitleMenuList, OutletBox } from "./AboutMe.styled";
 import { GoTriangleDown } from "react-icons/go";
-import { RiMailFill, RiPhoneFill } from "react-icons/ri";
 import TitleMenu from "../../component/TitleMenu/TitleMenu";
 import { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -10,6 +9,7 @@ import InterestsAbout from "../../component/InterestsAbout/InterestsAbout";
 import Education from "../../component/Education/Education";
 import EduTechSkill from "../../component/EduTechSkill/EduTechSkill";
 import Expirians from "../../component/Exprians/Exprians";
+import Contact from "../../component/Contact/Contact";
 
 const AboutMe = () => {
     const [actualTitle, setActualTitle] = useState(false);
@@ -33,13 +33,7 @@ const AboutMe = () => {
                     <TitleMenu color={'blue'} title={'education'} />
                     <TitleMenu color={'violet'} title={'expirians'} />
                 </TitleMenuList>
-                <div>
-                    <TitleContact><GoTriangleDown /> <span>contacts</span></TitleContact>
-                    <TitleContacList>
-                        <TitleContacItem><ContactLink href="mailto:dimkakhomenko@gmail.com"><RiMailFill style={{ fontSize: "16px" }} /> <span>dimkakhomenko@gmail.com</span> </ContactLink></TitleContacItem>
-                        <TitleContacItem><ContactLink href="tel:+380674037429"><RiPhoneFill style={{ fontSize: "16px" }} /><span>+380674037429</span></ContactLink></TitleContacItem>
-                    </TitleContacList>
-                </div>
+                <Contact />
             </Aside>
             <OutletBox>
                 {actualTitle === 'bio' ? <Box size={1}><Bio /></Box> : null}
