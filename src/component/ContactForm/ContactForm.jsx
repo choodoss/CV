@@ -34,13 +34,13 @@ const ContactForm = ({ hendleOnSubmit, hendleSetParam, name, email, message }) =
                         <Textarea onChange={hendleSetParam}
                             id="message"
                             name="message"
-                            rows="7"
+                            rows="6"
                             placeholder=" "
                             value={message}
                         />
                         <Label htmlFor="message">_message:</Label>
                     </InputWrapper>
-                    <Button type="submit">submit-message</Button>
+                    <Button disabled={!name || !email || !message} type="submit">submit-message</Button>
                 </form>
             </Container>
         </>

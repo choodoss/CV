@@ -29,7 +29,7 @@ const ContactMe = () => {
         </Aside>
         <OutletBox>
             <Box size={2}><ContactForm hendleOnSubmit={hendleOnSubmit} hendleSetParam={hendleSetParam} name={name} email={email} message={message} /></Box>
-            <Box size={2}><ContactJSvisualisation /></Box>
+            <Box size={2}><ContactJSvisualisation name={name} email={email} message={message} /></Box>
         </OutletBox >
     </Section>
     )
