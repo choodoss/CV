@@ -5,11 +5,18 @@ export const List = styled.ul`
 
 `;
 export const Item = styled.li`
-
+display:flex;
+gap:40px;
 font-size: 18px;
 font-style: normal;
 font-weight: 450;
 line-height: 1.5;
+`;
+
+export const Text = styled.p`
+display:flex;
+flex-wrap:wrap;
+
 `;
 
 export const RoseText = styled.span`

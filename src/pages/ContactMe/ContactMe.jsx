@@ -5,6 +5,7 @@ import { Aside } from "../AboutMe/AboutMe.styled";
 import { Section, OutletBox, Box } from "./ContactMe.styled";
 import ContactForm from "../../component/ContactForm/ContactForm";
 import ContactJSvisualisation from "../../component/ContactJSvisualisation/ContactJSvisualisation";
+import { sendMessageToTelegram } from "../../util/sendMessage/sendTelegramMessage";
 
 const ContactMe = () => {
     const [name, setName] = useState('');
@@ -18,7 +19,8 @@ const ContactMe = () => {
     }
     const hendleOnSubmit = (e) => {
         e.preventDefault();
-        console.log(e)
+        const telegramMessage = `New message from CV:\nІм'я: ${name}\nEmail: ${email}\nПовідомлення: ${message}`;
+        sendMessageToTelegram(telegramMessage);
     };
 
 
