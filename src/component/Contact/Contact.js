@@ -4,13 +4,12 @@ import { TitleContact, TitleContacList, TitleContacItem, ContactLink, Container 
 
 const Contact = () => {
 
-
     return (
         <Container>
             <TitleContact><GoTriangleDown /> <span>contacts</span></TitleContact>
             <TitleContacList>
                 <TitleContacItem><ContactLink href="mailto:dimkakhomenko@gmail.com"><RiMailFill style={{ fontSize: "16px" }} /> <span>dimkakhomenko@gmail.com</span> </ContactLink></TitleContacItem>
-                <TitleContacItem><ContactLink href="tel:+380674037429"><RiPhoneFill style={{ fontSize: "16px" }} /><span>+380674037429</span></ContactLink></TitleContacItem>
+                <TitleContacItem><ContactLink href="tel:+380674037429"><RiPhoneFill style={{ fontSize: "16px" }} /><span>+38 0674037429</span></ContactLink></TitleContacItem>
             </TitleContacList>
         </Container>)
 };

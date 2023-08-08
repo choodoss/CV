@@ -3,7 +3,7 @@ import Contact from "../../component/Contact/Contact";
 import FindMe from "../../component/FindMe/FindMe";
 import { Aside } from "../AboutMe/AboutMe.styled";
 import { Section, OutletBox, Box } from "./ContactMe.styled";
-import ContactForm from "../../component/ContactForm/ContactForm";
+import FeedbackForm from "../../component/FeedbackForm/FeedbackForm";
 import ContactJSvisualisation from "../../component/ContactJSvisualisation/ContactJSvisualisation";
 import { sendMessageToTelegram } from "../../util/sendMessage/sendTelegramMessage";
 
@@ -30,7 +30,7 @@ const ContactMe = () => {
             <FindMe />
         </Aside>
         <OutletBox>
-            <Box size={2}><ContactForm hendleOnSubmit={hendleOnSubmit} hendleSetParam={hendleSetParam} name={name} email={email} message={message} /></Box>
+            <Box size={2}><FeedbackForm hendleOnSubmit={hendleOnSubmit} hendleSetParam={hendleSetParam} name={name} email={email} message={message} /></Box>
             <Box size={2}><ContactJSvisualisation name={name} email={email} message={message} /></Box>
         </OutletBox >
     </Section>

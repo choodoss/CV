@@ -1,10 +1,10 @@
 import SubTitle from "../SubTitle/SubTitle";
-import { Input, Label, InputWrapper, Container, Textarea, Button, Form } from "./ContactForm.styled";
+import { Input, Label, InputWrapper, Container, Textarea, Button, Form } from "./FeedbackForm.styled";
 
-const ContactForm = ({ hendleOnSubmit, hendleSetParam, name, email, message }) => {
+const FeedbackForm = ({ hendleOnSubmit, hendleSetParam, name, email, message, phon }) => {
 
     return (<>
-        <SubTitle text={'contacts'} />
+        <SubTitle text={'feedback-form'} />
         <Container>
             <Form onSubmit={hendleOnSubmit} >
                 <InputWrapper>
@@ -45,4 +45,4 @@ const ContactForm = ({ hendleOnSubmit, hendleSetParam, name, email, message }) =
     </>);
 };
 
-export default ContactForm;
+export default FeedbackForm;

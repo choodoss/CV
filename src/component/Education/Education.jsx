@@ -1,10 +1,11 @@
+import Box from "../Box/Box";
 import SubTitle from "../SubTitle/SubTitle";
 import { EduContainer, EduBox, Title, Description, DateTime, DescriptionSpan } from "./Education.styled";
-
+import EduTechSkill from "../EduTechSkill/EduTechSkill";
 const Education = () => {
 
-    return (
-        <>
+    return (<>
+        <Box size={2}>
             <SubTitle text={'education'} />
             <EduContainer>
                 <EduBox>
@@ -22,7 +23,12 @@ const Education = () => {
                     <Description>vocational education, <DescriptionSpan>Telecommunications and Radio Engineering</DescriptionSpan></Description>
                     <DateTime>2004-2008</DateTime>
                 </EduBox>
-            </EduContainer></>)
+            </EduContainer>
+        </Box>
+        <Box size={2}>
+            <EduTechSkill />
+        </Box>
+    </>)
 };
 
 export default Education;
