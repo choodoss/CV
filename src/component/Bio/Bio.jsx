@@ -1,5 +1,6 @@
-import { TitleAbout } from "./Bio.styled";
-import { outletMacker } from "./OutletMacker/OutletMacker";
+import Box from "../Box/Box";
+import { outletMacker } from "../OutletMacker/OutletMacker";
+import SubTitle from "../SubTitle/SubTitle";
 
 const Bio = () => {
     const text =
@@ -7,12 +8,10 @@ const Bio = () => {
 
     const result = outletMacker(text);
     return (
-        <>
-            <div>
-                <TitleAbout>personal-info</TitleAbout>
-            </div>
+        <Box>
+            <SubTitle text={'personal-info'} />
             {result}
-        </>
+        </Box>
     );
 };
 

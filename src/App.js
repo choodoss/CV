@@ -5,6 +5,8 @@ import CvLayout from './component/CvLayout/CvLayout';
 import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
 import Nothing from './component/Nothing/Nothing';
+import Bio from './component/Bio/Bio';
+import InterestsAbout from "./component/InterestsAbout/InterestsAbout";
 
 function App() {
   return (
@@ -12,8 +14,8 @@ function App() {
       <Route path="/" element={<CvLayout />} >
         <Route index element={<Home />} />
         <Route path="about-me" element={<AboutMe />}>
-          <Route path="bio" element={<Nothing />} />
-          <Route path="interests" element={<Nothing />} />
+          <Route path="bio" element={<Bio />} />
+          <Route path="interests" element={<InterestsAbout />} />
           <Route path="education" element={<Nothing />} />
           <Route path="expirians" element={<Nothing />} />
         </Route>

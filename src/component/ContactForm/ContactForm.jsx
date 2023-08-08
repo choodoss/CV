@@ -1,11 +1,10 @@
-import { TitleAbout } from "../Bio/Bio.styled";
+import SubTitle from "../SubTitle/SubTitle";
 import { Input, Label, InputWrapper, Container, Textarea, Button, Form } from "./ContactForm.styled";
-
 
 const ContactForm = ({ hendleOnSubmit, hendleSetParam, name, email, message }) => {
 
     return (<>
-        <TitleAbout>contacts</TitleAbout>
+        <SubTitle text={'contacts'} />
         <Container>
             <Form onSubmit={hendleOnSubmit} >
                 <InputWrapper>

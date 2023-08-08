@@ -1,10 +1,11 @@
-import { TitleAbout } from "../Bio/Bio.styled";
+import SubTitle from "../SubTitle/SubTitle";
 import { EduContainer, EduBox, Title, Description, DateTime, DescriptionSpan } from "./Education.styled";
 
 const Education = () => {
 
     return (
-        <>        <TitleAbout>education</TitleAbout>
+        <>
+            <SubTitle text={'education'} />
             <EduContainer>
                 <EduBox>
                     <Title>GoIT</Title>

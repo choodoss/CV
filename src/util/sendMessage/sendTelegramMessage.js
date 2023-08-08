@@ -13,7 +13,6 @@ export const sendMessageToTelegram = async (text) => {
             text: text,
         }),
     };
-    console.log(apiUrl)
 
     try {
         const response = await fetch(apiUrl, requestOptions);
