@@ -1,11 +1,11 @@
 import { useState } from "react";
+import { Section, OutletBox, Box } from "./ContactMe.styled";
+import { sendMessageToTelegram } from "../../util/sendMessage/sendTelegramMessage";
 import Contact from "../../component/Contact/Contact";
 import FindMe from "../../component/FindMe/FindMe";
-import { Aside } from "../AboutMe/AboutMe.styled";
-import { Section, OutletBox, Box } from "./ContactMe.styled";
 import FeedbackForm from "../../component/FeedbackForm/FeedbackForm";
 import ContactJSvisualisation from "../../component/ContactJSvisualisation/ContactJSvisualisation";
-import { sendMessageToTelegram } from "../../util/sendMessage/sendTelegramMessage";
+import Aside from "../../component/Aside/Aside";
 
 const ContactMe = () => {
     const [name, setName] = useState('');

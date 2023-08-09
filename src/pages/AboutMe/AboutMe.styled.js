@@ -29,11 +29,6 @@ padding:10px 0;
 padding-left:14px;
 `;
 
-export const Aside = styled.aside`
-flex-basis:311px;
-flex-shrink: 0;
-`;
-
 export const TitleMenuList = styled.ul`
 display: flex;
 flex-direction: column;

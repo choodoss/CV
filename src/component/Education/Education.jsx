@@ -10,7 +10,7 @@ const Education = () => {
             <EduContainer>
                 <EduBox>
                     <Title>GoIT</Title>
-                    <Description>junior, <DescriptionSpan>Full Stack Developer</DescriptionSpan></Description>
+                    <Description><DescriptionSpan>Full Stack Developer</DescriptionSpan></Description>
                     <DateTime>2022-2023</DateTime>
                 </EduBox>
                 <EduBox>

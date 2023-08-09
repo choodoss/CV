@@ -1,9 +1,10 @@
-import { TitleIsHidden, Section, TitleActive, Aside, TitleMenuList } from "./AboutMe.styled";
-import { GoTriangleDown } from "react-icons/go";
-import TitleMenu from "../../component/TitleMenu/TitleMenu";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
-import Contact from "../../component/Contact/Contact";
 import { useEffect } from "react";
+import { GoTriangleDown } from "react-icons/go";
+import { TitleIsHidden, Section, TitleActive, TitleMenuList } from "./AboutMe.styled";
+import TitleMenu from "../../component/TitleMenu/TitleMenu";
+import Contact from "../../component/Contact/Contact";
+import Aside from "../../component/Aside/Aside";
 
 const AboutMe = () => {
     const navigate = useNavigate();
