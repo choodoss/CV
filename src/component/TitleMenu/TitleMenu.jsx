@@ -3,7 +3,6 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { useEffect, useState } from "react";
 import { Title1, Title2, ArrowIcon, FolderIcon, TitleElement } from "./TitleMenu.styled";
 import { useLocation } from "react-router-dom";
-// import AnimatedOutlet from "../AnimatedOutlet/AnimatedOutlet";
 
 const TitleMenu = ({ color, title }) => {
     const [isActive, setIsActive] = useState(false);
@@ -31,9 +30,6 @@ const TitleMenu = ({ color, title }) => {
                     <FolderIcon color={color}><PiFolderNotchFill style={{ fontSize: "14px" }} /></FolderIcon>
                     <TitleElement >{title}</TitleElement>
                 </Title2>}
-            {/* {isActive && (
-                <AnimatedOutlet />
-            )} */}
         </li>
     );
 };

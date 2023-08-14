@@ -5,6 +5,7 @@ import { TitleIsHidden, Section, TitleActive, TitleMenuList } from "./AboutMe.st
 import TitleMenu from "../../component/TitleMenu/TitleMenu";
 import Contact from "../../component/Contact/Contact";
 import Aside from "../../component/Aside/Aside";
+import AsideMainTitle from "../../component/AsideMainTitle/AsideMainTitle";
 
 const AboutMe = () => {
     const navigate = useNavigate();
@@ -18,7 +19,7 @@ const AboutMe = () => {
         <Section>
             <TitleIsHidden>About Me</TitleIsHidden>
             <Aside>
-                <TitleActive><GoTriangleDown /><span>personal-info</span></TitleActive>
+                <AsideMainTitle text={'personal-info'} />
                 <TitleMenuList>
                     <TitleMenu color={'orange'} title={'bio'} />
                     <TitleMenu color={'green'} title={'interests'} />
