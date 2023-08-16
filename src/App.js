@@ -20,11 +20,14 @@ function App() {
           <Route path="education" element={<Education />} />
           <Route path="expirians" element={<Expirians />} />
         </Route>
-        <Route path="projects" element={< Projects />} />
+        <Route path="projects" element={< Projects />} >
+          <Route index element={<Education />} />
+          <Route path=":filters" element={<Expirians />} />
+        </Route>
         <Route path="contact-me" element={<ContactMe />} />
       </Route>
     </Routes>
   );
 }
-
+// FilteredProjects
 export default App;

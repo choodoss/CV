@@ -13,7 +13,7 @@ const Projects = () => {
             <ProjectFilters />
         </Aside>
         <OutletBox>
-            {/* <Box size={1}><Contact /></Box> */}
+            <Outlet />
         </OutletBox >
     </Section>)
 };
