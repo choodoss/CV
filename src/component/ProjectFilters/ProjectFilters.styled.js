@@ -29,7 +29,6 @@ export const CheckBoxCustom = styled.span`
     border-radius: 0.3rem;
     border: 1px solid #607B96;
     display:block;
-    /* transition: outline 250ms ease-in-out; */
 `;
 
 export const CheckBoxLabel = styled.label`

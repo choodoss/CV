@@ -1,4 +1,4 @@
-import { Form, Link, Container, CheckBoxContainer, CheckBoxLabel, CheckBoxInput, CheckBoxCustom } from "./ProjectFilters.styled";
+import { Form, Container, CheckBoxContainer, CheckBoxLabel, CheckBoxInput, CheckBoxCustom } from "./ProjectFilters.styled";
 import AsideMainTitle from "../../component/AsideMainTitle/AsideMainTitle";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +21,7 @@ const ProjectFilters = () => {
 
     useEffect(() => {
         navigate(selectedFilters.join('&'));
-    }, [selectedFilters]);
+    }, [selectedFilters, navigate]);
 
     return (
         <Container>

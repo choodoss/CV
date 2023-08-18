@@ -8,6 +8,7 @@ import Bio from './component/Bio/Bio';
 import InterestsAbout from "./component/InterestsAbout/InterestsAbout";
 import Education from './component/Education/Education';
 import Expirians from './component/Expirians/Expirians';
+import FilteredProjects from './component/FilteredProjects/FilteredProjects';
 
 function App() {
   return (
@@ -21,13 +22,12 @@ function App() {
           <Route path="expirians" element={<Expirians />} />
         </Route>
         <Route path="projects" element={< Projects />} >
-          <Route index element={<Education />} />
-          <Route path=":filters" element={<Expirians />} />
+          <Route index element={<FilteredProjects />} />
+          <Route path=":filters" element={<FilteredProjects />} />
         </Route>
         <Route path="contact-me" element={<ContactMe />} />
       </Route>
     </Routes>
   );
 }
-// FilteredProjects
 export default App;
