@@ -3,16 +3,13 @@ import styled from "styled-components";
 export const Nav = styled.footer`
 display:flex;
 align-items: center;
-border-radius: 0 0 8px 8px;
-  border: 1px solid #1E2D3D;
-  background: #011627;
 `;
 
 export const LinkList = styled.ul`
 display:flex;
 width:100%;
-
 `;
+
 export const LinkItem = styled.li`
 border-left: 1px solid #1e2d3d;
 
