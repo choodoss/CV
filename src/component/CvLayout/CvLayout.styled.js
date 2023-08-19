@@ -7,7 +7,13 @@ padding: 5lvh;
 margin:0 auto;
 height: 90lvh;
 display: flex;
-  flex-direction: column;
+flex-direction: column;
+
+  @media screen and (max-width:480px) {
+    padding: 2lvh;
+    height: auto;
+    max-width: 480px;
+    }
 `;
 
 export const Header = styled.header`
@@ -18,12 +24,15 @@ export const Header = styled.header`
 export const Nav = styled.nav`
 display:flex;
 align-items: center;
+
 `;
 
 export const LinkList = styled.ul`
 display:flex;
 width:100%;
-
+@media screen and (max-width:480px) {
+display:none;//
+    }
 `;
 export const LinkItem = styled.li`
 border-left: 1px solid #1e2d3d;
@@ -66,9 +75,7 @@ export const LinkPage = styled(NavLink)`
     background-color: #fea55f;
     opacity: 0;
     transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
-    
-
-  }
+    }
 
   &:hover,
   &:focus {
@@ -101,6 +108,11 @@ position:relative;
   background: #011627;
   display: flex;
   overflow: hidden;
+
+  @media screen and (max-width:480px) {
+    max-height: auto;
+    
+    }
 `;
 
 

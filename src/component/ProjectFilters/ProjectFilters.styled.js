@@ -36,6 +36,9 @@ display:block;
 font-size: 16px;
 padding-left:42px;
 font-weight: 400;
+display:flex;
+gap:10px;
+align-items:center;
 
 transition: color 250ms ease-in-out;
 `;

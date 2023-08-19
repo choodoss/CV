@@ -35,8 +35,6 @@ export const List = styled.ul`
 export const Item = styled.li`
 flex-basis:calc((100% - (40px * 2)) / 3);
 overflow: hidden;
-/* max-width: 370px; */
-
 `;
 export const Body = styled.div`
 position:relative;
@@ -44,13 +42,24 @@ overflow: hidden;
 border-radius: 15px;
 border: 1px solid #1E2D3D;
 background: #011221;
-box-sizing:border-box;
+
+display: flex;
+    flex-direction: column;
+    height: 85%;
 `;
 export const Img = styled.img`
-
+height: 145px;
+width:100%;
+  object-fit: cover;
+  object-position: top;
 `;
 
 export const TextBody = styled.div`
+flex-grow: 1;
+display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+
 border-top: 1px solid #1E2D3D;
 padding:32px 24px;
 box-sizing:border-box;
@@ -60,11 +69,10 @@ color: #607B96;
 font-size: 18px;
 font-weight: 450;
 line-height: 1.5;
-
-margin-bottom:24px
+margin-bottom:24px;
+flex-grow: 1;
 `;
 export const Link = styled.a`
-display:inline-block;
 padding:10px 14px;
 color: #FFF;
 font-size: 14px;
@@ -80,10 +88,29 @@ top:16px;
 right:16px;
 
 padding:6px;
-border-radius: 2px;
+border-radius: 0.25rem;
 background-color: #86E1F9;
-
+color: #000;
 display:flex;
 justify-content: center;
 align-items:center;
+`;
+export const SecondIcon = styled(Icon)`
+top:54px;
+`;
+
+export const IconHtml = styled(Icon)`
+background-color: #FFA500;
+`;
+
+export const IconReact = styled(Icon)`
+background-color: #86E1F9;
+`;
+
+export const IconSass = styled(SecondIcon)`
+background-color: #CD6799;
+`;
+
+export const IconJs = styled(Icon)`
+background-color: #f0db4f;
 `;

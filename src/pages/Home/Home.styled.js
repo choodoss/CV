@@ -10,6 +10,10 @@ margin-left:311px;
 display: flex;
   flex-direction: column;
   justify-content: center;
+  @media screen and (max-width:480px) {
+    height: auto;
+    margin-left:0;
+    }
 `;
 
 export const TextList = styled.ul`
@@ -17,6 +21,9 @@ export const TextList = styled.ul`
 
 export const Section = styled.section`
 height: 100%;
+@media screen and (max-width:480px) {
+    height: auto;
+    }
 `;
 
 export const GreenLight = styled.div`
