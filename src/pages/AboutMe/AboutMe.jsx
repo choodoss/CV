@@ -18,7 +18,7 @@ const AboutMe = () => {
         <Section>
             <TitleIsHidden>About Me</TitleIsHidden>
             <Aside>
-                <AsideMainTitle text={'personal-info'} />
+                <AsideMainTitle text={'info'} />
                 <TitleMenuList>
                     <TitleMenu color={'orange'} title={'bio'} />
                     <TitleMenu color={'green'} title={'interests'} />

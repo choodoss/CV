@@ -9,25 +9,24 @@ margin:0 auto;
 @media screen and (max-width:481px) {
     padding: 2lvh;
     max-width: 480px;
-    height: 96lvh;
     }
 `;
 
 export const Container = styled.div`
-    border-radius: 8px;
+border-radius: 0.6rem;
 border: 1px solid #1E2D3D;
 background-color: #011627;
 height: 90lvh;
 display: flex;
 flex-direction: column;
 @media screen and (max-width:481px) {
-    height: 96lvh;
+    height: auto;
     }
 
 `;
 
 export const Header = styled.header`
-
+border-bottom: 1px solid #1E2D3D;
 `;
 
 export const Nav = styled.nav`
@@ -63,10 +62,9 @@ export const LinkPage = styled(NavLink)`
   display: block;
   color: #607b96;
   font-size: 16px;
-  font-style: normal;
   font-weight: 450;
-  line-height: normal;
   padding: 12.5px 32px;
+
   transition: color 250ms ease-in-out;
   
   &::after {
@@ -111,7 +109,6 @@ export const Main = styled.main`
 position:relative;
   flex: 1 1 auto;
   max-height: 100%;
-  border: 1px solid #1E2D3D;
   background-color: #011627;
   display: flex;
   overflow: hidden;
@@ -120,31 +117,3 @@ position:relative;
     /* max-height: auto; */
     }
 `;
-
-export const MobHeader = styled.div`
-display:none;
-  @media screen and (max-width:481px) {
-    height:56px;
-    width:100%;
-
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
-
-    padding: 0 18px;
-    }
-`;
-export const Author = styled.span`
-  @media screen and (max-width:481px) {
-    color: #607B96;
-    font-size: 16px;
-    font-weight: 450;
-    }
-`;
-export const MobMenuButton = styled.button`
-  @media screen and (max-width:481px) {
-background-color:inherit;
-color:#fff;
-    }
-`;
-

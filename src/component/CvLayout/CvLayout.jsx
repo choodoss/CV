@@ -1,20 +1,22 @@
-import { Outlet, useParams } from "react-router-dom";
-import { BoxWindow, Header, LinkItem, LinkList, LinkName, LinkPage, Nav, Main, MobHeader, Author, MobMenuButton, Container } from "./CvLayout.styled";
+import { Outlet, useLocation } from "react-router-dom";
+import { BoxWindow, Header, LinkItem, LinkList, LinkName, LinkPage, Nav, Main, Container } from "./CvLayout.styled";
 import Footer from "../Foooter/Footer";
 import { useState } from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
+import MobMenu from "../MobMenu/MobMenu";
+import MobHeader from "../MobHeader/MobHeader";
 
 const CvLayout = () => {
     const [isMobMenu, setIsMobMenu] = useState(false)
-    const params = useParams()
-    console.log(params)
+    const location = useLocation();
+
     const hendleOpenMobMenu = () => {
         setIsMobMenu(prevValue => !prevValue)
-        console.log("open")
     }
 
-    const mobwidth = document.documentElement.clientWidth
-    console.log(mobwidth)
+    const userWidth = document.documentElement.clientWidth;
+    const isHomePage = location.pathname === "/";
+    const isMobileDevice = userWidth <= 481;
+
     return (
         <>
             <BoxWindow>
@@ -28,15 +30,14 @@ const CvLayout = () => {
                                 <LinkItem><LinkPage to='/projects'>_projects</LinkPage></LinkItem>
                                 <LinkItem><LinkPage to='/contact-me'>_contact-me</LinkPage></LinkItem>
                             </LinkList>
-                            <MobHeader>
-                                <Author>dmytro-khomenko</Author><MobMenuButton onClick={hendleOpenMobMenu} type="button"><RxHamburgerMenu style={{ fontSize: "18px" }} /></MobMenuButton>
-                            </MobHeader>
+                            <MobHeader isMobMenu={isMobMenu} openMenu={hendleOpenMobMenu} />
                         </Nav>
                     </Header>
-                    <Main>
+                    {isMobMenu && <MobMenu closeMenu={hendleOpenMobMenu} />}
+                    {isMobMenu ? null : <Main>
                         <Outlet />
-                    </Main>
-                    {mobwidth >= 481 && <Footer />}
+                    </Main >}
+                    {(isHomePage && isMobileDevice || isMobMenu) ? null : <Footer />}
                 </Container>
             </BoxWindow >
         </>

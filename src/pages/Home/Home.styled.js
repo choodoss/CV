@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Section = styled.section`
 height: 100%;
 @media screen and (max-width:480px) {
-    height: auto;
+    height: 87lvh;
     }
 `;
 export const HeadProfile = styled.div`
@@ -84,6 +84,7 @@ font-weight: 450;
 @media screen and (max-width:481px) { 
 font-size: 14px;
 line-height: 1.4;
+margin-bottom:16px;
     }
 `;
 export const TextViolet = styled.span`
