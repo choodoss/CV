@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import { EduContainer, List, Item, Title } from "./EduTechSkill.styled";
+import { EduContainer, List, Item, Title, Text } from "./EduTechSkill.styled";
 import SubTitle from "../SubTitle/SubTitle";
 
 const EduTechSkill = () => {
@@ -15,7 +15,7 @@ const EduTechSkill = () => {
                 <List>
                     {techSkils.map((item, index) => (
                         <Item key={nanoid()}>
-                            <span>{index <= 9 ? "\u00a0" : null}{index}:&nbsp;</span>
+                            <Text>{index <= 9 ? "\u00a0" : null}{index}:&nbsp;</Text>
                             {item}
                         </Item>
                     ))}
@@ -24,7 +24,7 @@ const EduTechSkill = () => {
                 <List>
                     {skillsAndQualities.map((item, index) => (
                         <Item key={nanoid()}>
-                            <span>{index <= 9 ? "\u00a0" : null}{index}:&nbsp;</span>
+                            <Text>{index <= 9 ? "\u00a0" : null}{index}:&nbsp;</Text>
                             {item}
                         </Item>
                     ))}

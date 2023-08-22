@@ -11,34 +11,32 @@ export const TitleIsHidden = styled.h2`
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+    @media screen and (max-width:768px) {
+        position: relative;
+        width: auto;
+        height: auto;
+        color: #FFF;
+        overflow: auto;
+        clip: auto;
+        clip-path: none;
+        margin: 0;
+
+        padding: 21px 0 21px 27px;
+font-size: 14px;
+font-weight: 450;
+line-height: 1.4;
+    }
 `;
 
 export const Section = styled.section`
 display: flex;
 color: #607B96;
 flex-grow: 1;
+@media screen and (max-width:768px) {
+    display: block;
+    }
 `;
 
-export const TitleActive = styled.p`
-color: #FFF;
-font-weight: 400;
-border-bottom: 1px solid #1E2D3D;
-display: flex;
-align-items: center;
-padding:10px 0;
-padding-left:14px;
-`;
-
-export const TitleMenuList = styled.ul`
-display: flex;
-flex-direction: column;
-gap:8px;
-
-padding-top:16px;
-padding-bottom:16px;
-padding-left:16px;
-
-`;
 export const OutletBox = styled.div`
 flex-grow: 1;
 display: flex;

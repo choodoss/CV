@@ -15,7 +15,7 @@ const CvLayout = () => {
 
     const userWidth = document.documentElement.clientWidth;
     const isHomePage = location.pathname === "/";
-    const isMobileDevice = userWidth <= 481;
+    const isMobileDevice = userWidth <= 768;
 
     return (
         <>

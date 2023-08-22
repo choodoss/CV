@@ -6,15 +6,16 @@ import ProjectFilters from "../../component/ProjectFilters/ProjectFilters";
 
 const Projects = () => {
 
-    return (<Section>
-        <TitleIsHidden>Projects</TitleIsHidden>
-        <Aside>
-            <ProjectFilters />
-        </Aside>
-        <OutletBox>
-            <Outlet />
-        </OutletBox >
-    </Section>)
+    return (
+        <Section>
+            <TitleIsHidden>Projects</TitleIsHidden>
+            <Aside>
+                <ProjectFilters />
+            </Aside>
+            <OutletBox>
+                <Outlet />
+            </OutletBox >
+        </Section>)
 };
 
 export default Projects;

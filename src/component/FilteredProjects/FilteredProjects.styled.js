@@ -11,6 +11,9 @@ padding-left: 28px;
 padding-bottom: 28px;
 padding-right: 28px;
 height: 90%;
+@media screen and (max-width:1350px) {
+      gap:15px;
+    }
 `;
 
 export const Title = styled.h4`
@@ -30,11 +33,28 @@ export const List = styled.ul`
   flex-wrap: wrap;
   column-gap: 40px;
   row-gap: 30px;
+  @media screen and (max-width:767px) {
+flex-direction: column;
+flex-wrap: nowrap;
+gap:20px;
+    }
+    @media screen and (max-width:1350px) {
+      gap:15px;
+    }
 `;
 
 export const Item = styled.li`
 flex-basis:calc((100% - (40px * 2)) / 3);
 overflow: hidden;
+
+@media screen and (max-width:767px) {
+    flex-basis:100%;
+    }
+
+@media screen and (max-width:1350px) {
+      flex-basis:calc((100% - (40px)) / 2);
+    }
+
 `;
 export const Body = styled.div`
 position:relative;
@@ -44,9 +64,10 @@ border: 1px solid #1E2D3D;
 background: #011221;
 
 display: flex;
-    flex-direction: column;
-    height: 85%;
+flex-direction: column;
+height: 85%;
 `;
+
 export const Img = styled.img`
 height: 145px;
 width:100%;

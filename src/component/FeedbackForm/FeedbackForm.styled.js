@@ -6,6 +6,9 @@ flex-direction: column;
 align-items:center;
 justify-content: center; 
   height: 100%; 
+  @media screen and (max-width:768px) {
+display:block;
+    }
 `;
 
 export const InputWrapper = styled.div`
@@ -21,6 +24,10 @@ box-sizing: content-box;
 gap:24px;
 width: 372px;
 padding:20px;
+@media screen and (max-width:768px) {
+  width: auto;
+  box-sizing: border-box;
+    }
 `;
 
 export const Label = styled.label`

@@ -1,19 +1,10 @@
-import { GoTriangleDown } from "react-icons/go";
-import styled from "styled-components";
+import { GoTriangleRight } from "react-icons/go";
+import { Title, AnimationIcon } from "./AsideMainTitle.styled";
 
-export const Title = styled.p`
-color: #FFF;
-font-weight: 400;
-border-bottom: 1px solid #1E2D3D;
-display: flex;
-align-items: center;
-padding:10px 0;
-padding-left:14px;
-`;
-const AsideMainTitle = ({ text }) => {
+const AsideMainTitle = ({ text, hendleOpenSubMenu, open }) => {
 
     return (
-        <Title><GoTriangleDown /><span>{text}</span></Title>
+        <Title onClick={hendleOpenSubMenu} ><AnimationIcon className={open ? "open" : "close"}><GoTriangleRight /></AnimationIcon><span>{text}</span></Title>
     );
 };
 

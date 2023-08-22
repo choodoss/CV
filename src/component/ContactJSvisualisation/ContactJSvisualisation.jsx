@@ -1,10 +1,10 @@
 import SubTitle from "../SubTitle/SubTitle";
-import { List, Item, RoseText, VioletText, OrangeText, Container, Text } from "./ContactJSvisualisation.styled";
+import { List, Item, RoseText, VioletText, OrangeText, Container, Text, Section } from "./ContactJSvisualisation.styled";
 
 const ContactJSvisualisation = ({ name, email, message }) => {
 
     return (
-        <>
+        <Section>
             <SubTitle text={'send-to-telegram'} />
             <Container>
                 <List>
@@ -22,7 +22,7 @@ const ContactJSvisualisation = ({ name, email, message }) => {
                     <Item>12<Text>&#125;)</Text></Item>
                 </List>
             </Container>
-        </>
+        </Section>
     );
 };
 

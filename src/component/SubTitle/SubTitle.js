@@ -7,13 +7,20 @@ export const Title = styled.span`
   align-items: center;
   padding: 10px 0;
   padding-left: 14px;
+  @media screen and (max-width:768px) {
+    border-bottom: none;
+    margin-bottom:7px;
+    padding-left: 27px;
+
+    color: #fff;
+    }
 `;
 
 const SubTitle = ({ text }) => {
-    return (<div>
-        <Title>{text}</Title>
-    </div>
-    )
+  return (<div>
+    <Title>{text}</Title>
+  </div>
+  )
 };
 
 export default SubTitle;

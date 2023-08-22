@@ -20,7 +20,6 @@ const Expirians = () => {
                         </ItemPosition>
                     ) : (
                         <ItemPosition key={nanoid()}>
-                            {/* <Title>{item.title}</Title> */}
                             <Description>{wrapperExpDescription(item.description)}</Description>
                         </ItemPosition>
                     )

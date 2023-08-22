@@ -11,7 +11,11 @@ gap:9px;
 
 padding-top:18px;
 padding-left:16px;
+padding-right:24px;
 padding-bottom:26px;
+@media screen and (max-width:768px) {
+    padding-left:27px;
+    }
 `;
 
 export const CheckBoxContainer = styled.div`

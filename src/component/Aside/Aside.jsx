@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const AsideContainer = styled.aside`
 flex-basis: 311px;
 flex-shrink: 0;
+@media screen and (max-width:1000px) {
+    flex-shrink: 1;
+    }
 `;
 
 const Aside = ({ children }) => {

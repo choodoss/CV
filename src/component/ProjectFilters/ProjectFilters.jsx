@@ -26,7 +26,7 @@ const ProjectFilters = () => {
 
     return (
         <Container>
-            <AsideMainTitle text={"Projects"} />
+            <AsideMainTitle open="true" text={"Projects"} />
             <Form onClick={hendleSetSelectedFilters}>
                 <CheckBoxContainer>
                     <CheckBoxInput id="checkHTML" type="checkbox" name="HTML" />

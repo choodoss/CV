@@ -1,33 +1,33 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-export const ArrowIcon = styled.span`
-  margin-right: 14px;
-  transform: rotate(90deg);
-`
-export const Title1 = styled(NavLink)`
-font-weight: 400;
-display: flex;
-align-items: center;
-color: #fff;
-`;
 
-export const Title2 = styled(NavLink)`
-color: inherit;
+export const Title = styled(NavLink)`
 font-weight: 400;
 display: flex;
 align-items: center;
+color: inherit;
 transition: color 250ms ease-in-out;
+
 &:hover,&:focus{
   color:#fff;
   outline:none;
 }
 
-${ArrowIcon}{
-    transform: none; 
-}`;
+&.active{
+  color: #fff;
+}
+`;
 
+export const ArrowIcon = styled.span`
+  margin-right: 14px;
+  transform: rotate(0deg);
+  transition: transform 250ms ease-in-out;
 
+  ${Title}.active & {
+    transform: rotate(90deg);
+  }
+`
 
 export const TitleElement = styled.span`
 color: inherit

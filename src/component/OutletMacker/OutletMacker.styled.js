@@ -16,5 +16,13 @@ padding-top: 18px;
 padding-left: 38px;
 padding-bottom: 18px;
 height: 90%;
-    overflow: auto;
+overflow: auto;
+`;
+
+export const Text = styled.div`
+color: #607B96;
+font-weight: 450;
+line-height: 1.5;
+padding: 0 27px;
+padding-bottom: 38px;
 `;

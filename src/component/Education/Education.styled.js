@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
 export const EduContainer = styled.div`
-height:85%;
+height:90%;
+overflow: auto;
+overflow: auto;
 padding: 40px;
 display:flex;
 flex-direction: column;
 justify-content: center;
 gap: 20px;
-
+@media screen and (max-width:768px) {
+padding: 20px;
+    }
 `;
 export const EduBox = styled.div`
 border-radius: 15px;

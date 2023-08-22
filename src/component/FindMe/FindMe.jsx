@@ -1,14 +1,19 @@
-import { GoTriangleDown } from "react-icons/go";
 import { FiExternalLink } from "react-icons/fi";
-import { Title, Item, LinkItem, List, Container } from "./FindMe.styled";
+import { Item, LinkItem, List, Container } from "./FindMe.styled";
+import { useState } from 'react';
+import AsideMainTitle from "../AsideMainTitle/AsideMainTitle";
 
-const FindMe = () => {
+const FindMe = ({ open = false }) => {
+    const [openMenu, setOpenMenu] = useState(open);
 
+    const hendleOpenSubMenu = () => {
+        setOpenMenu(prev => !prev);
+    };
 
     return (
         <Container>
-            <Title><GoTriangleDown /> <span>find-me-also-in</span></Title>
-            <List>
+            <AsideMainTitle hendleOpenSubMenu={hendleOpenSubMenu} open={openMenu} text={'find-me-also-in'} />
+            <List className={openMenu ? "open" : "close"}>
                 <Item><LinkItem target="_blank" href="https://www.instagram.com/dmytro_khomenko/"><FiExternalLink style={{ fontSize: "16px" }} /> <span>Instagram accaunt</span> </LinkItem></Item>
                 <Item><LinkItem target="_blank" href="https://www.facebook.com/dim4a" ><FiExternalLink style={{ fontSize: "16px" }} /> <span>Facebook accaunt</span> </LinkItem></Item>
                 <Item><LinkItem target="_blank" href="https://discord.com/users/choodoss"><FiExternalLink style={{ fontSize: "16px" }} /> <span>Discord profile</span> </LinkItem></Item>

@@ -1,11 +1,18 @@
 import { nanoid } from "nanoid";
-import { TextItem, TextList, Box } from "./OutletMacker.styled";
+import { TextItem, TextList, Box, Text } from "./OutletMacker.styled";
 
 export const outletMacker = (text) => {
     const viewportWidth = document.documentElement.clientWidth;
-    const charWidth = 13;
-    const maxLength = Math.floor(((viewportWidth - 311) - (viewportWidth * 0.1)) / charWidth) - 6;
 
+    if (viewportWidth <= 481) {
+        return <Text>{text}</Text>;
+    }
+
+    const charWidth = 13;
+    let maxLength = Math.floor(((viewportWidth - 311) - (viewportWidth * 0.1)) / charWidth) - 6;
+    if (viewportWidth <= 768) {
+        maxLength = Math.floor((viewportWidth - (viewportWidth * 0.1)) / charWidth);
+    }
     const result = [];
     let textLineNumber = 1;
     let currentLine = "* ";

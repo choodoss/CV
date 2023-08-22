@@ -16,7 +16,7 @@ border-left: 1px solid #1e2d3d;
 
 &:nth-child(4) {
   border-right: 1px solid #1e2d3d;
-    @media screen and (max-width:481px) {
+    @media screen and (max-width:768px) {
     display:none;
     }
   }
@@ -24,20 +24,20 @@ border-left: 1px solid #1e2d3d;
 &:last-child {
   border-right: 1px solid #1e2d3d;
     margin-left: auto;
-    @media screen and (max-width:481px) {
+    @media screen and (max-width:768px) {
       border-right: none;
       margin-left: 0;
     }
   }
   &:first-child {
     border-left: none;
-    @media screen and (max-width:481px) {
+    @media screen and (max-width:768px) {
     margin-right: auto;
     }
   }
   &:nth-child(3) {
     
-    @media screen and (max-width:481px) {
+    @media screen and (max-width:768px) {
 
     }
   }
@@ -80,14 +80,14 @@ justify-content: center;
 align-items: center;
 gap:5px;
 padding: 11px 22px;
-@media screen and (max-width:481px) {
+@media screen and (max-width:768px) {
   gap: 0;
   padding: 11px 14px;
 }
 `;
 
 export const Text = styled.span`
-  @media screen and (max-width:481px) {
+  @media screen and (max-width:768px) {
     display:none;
     }
 `;
