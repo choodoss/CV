@@ -76,7 +76,7 @@ const FilteredProjects = () => {
                             <Img src={pic4} alt="preview project 4" width="370" />
                             <TextBody>
                                 <Text>Independent work, React, Redux Toolkit (RTK), and Material-UI (MUI) for design.</Text>
-                                <Link target="_blank" href="https://choodoss.github.io/project-group-1-js/">view-project</Link>
+                                <Link target="_blank" href="https://choodoss.github.io/goit-react-hw-08-RTK-phonebook/">view-project</Link>
                             </TextBody>
                             {iconReact}
                         </Body>
