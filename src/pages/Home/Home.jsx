@@ -14,7 +14,7 @@ const Home = () => {
                 </HeadProfile>
                 <TextList>
                     <TextDownProfile>&#47;&#47;this resume is built with react</TextDownProfile>
-                    <TextDownProfile>&#47;&#47;context is used for language switching</TextDownProfile>
+                    <TextDownProfile>&#47;&#47;find my profile on Github:</TextDownProfile>
                     <TextDownProfile><TextViolet>const</TextViolet><TextGreen> githubLink = </TextGreen><LinkOrange aria-label="Repositories on GitHub" href="https://github.com/choodoss" target="_blank">https://github.com/choodoss</LinkOrange></TextDownProfile>
                 </TextList>
                 <MobTextList>

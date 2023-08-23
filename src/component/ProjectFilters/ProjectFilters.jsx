@@ -22,6 +22,7 @@ const ProjectFilters = () => {
 
     useEffect(() => {
         navigate(selectedFilters.join('&'));
+
     }, [selectedFilters, navigate]);
 
     return (

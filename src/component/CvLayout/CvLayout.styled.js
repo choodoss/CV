@@ -6,9 +6,9 @@ max-width: 1782px;
 padding: 5lvh;
 margin:0 auto;
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:999px) {
     padding: 2lvh;
-    max-width: 768px;
+    max-width: 999px;
     }
 `;
 
@@ -19,7 +19,8 @@ background-color: #011627;
 height: 90lvh;
 display: flex;
 flex-direction: column;
-@media screen and (max-width:768px) {
+box-sizing:border-box;
+@media screen and (max-width:999px) {
     height: auto;
     }
 `;
@@ -36,7 +37,7 @@ align-items: center;
 export const LinkList = styled.ul`
 display:flex;
 width:100%;
-@media screen and (max-width:768px) {
+@media screen and (max-width:999px) {
 display:none;//
     }
 `;
@@ -115,7 +116,7 @@ position:relative;
   display: flex;
   overflow: hidden;
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:999px) {
     display:block;
     }
 `;

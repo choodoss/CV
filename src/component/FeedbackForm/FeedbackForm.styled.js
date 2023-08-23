@@ -5,8 +5,8 @@ display:flex;
 flex-direction: column;
 align-items:center;
 justify-content: center; 
-  height: 100%; 
-  @media screen and (max-width:768px) {
+  height: calc(100% - 42px); 
+  @media screen and (max-width:999px) {
 display:block;
     }
 `;
@@ -24,9 +24,8 @@ box-sizing: content-box;
 gap:24px;
 width: 372px;
 padding:20px;
-@media screen and (max-width:768px) {
+@media screen and (max-width:999px) {
   width: auto;
-  box-sizing: border-box;
     }
 `;
 

@@ -14,7 +14,7 @@ display: flex;
 flex-direction: column;
 gap:9px;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 999px) {
     padding-left: 27px;
   &.close {
     animation: none;

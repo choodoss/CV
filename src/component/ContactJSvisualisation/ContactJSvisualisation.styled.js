@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const Section = styled.div`
-@media screen and (max-width: 768px) {
+export const Section = styled.section`
+height:100%;
+@media screen and (max-width: 999px) {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -12,6 +13,17 @@ export const Section = styled.div`
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+`;
+
+export const Container = styled.div`
+display:flex;
+height:calc(100% - 42px);
+justify-content: center;
+align-items: center;
+padding: 0 70px;
+@media screen and (max-width: 1400px) {
+    padding: 0 20px;
 }
 `;
 
@@ -44,13 +56,5 @@ export const OrangeText = styled.span`
 color: #FEA55F;
 `;
 
-export const Container = styled.div`
-display:flex;
-height:100%;
-justify-content: center;
-align-items: center;
-
-padding: 0 70px;
-`;
 
 

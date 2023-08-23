@@ -11,7 +11,7 @@ padding-left: 14px;
 
 transition: opacity 300ms ease-in-out;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 999px) {
     padding-left: 27px;
 
   &.close {

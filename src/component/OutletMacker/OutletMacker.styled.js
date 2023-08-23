@@ -15,7 +15,8 @@ export const Box = styled.div`
 padding-top: 18px;
 padding-left: 38px;
 padding-bottom: 18px;
-height: 90%;
+box-sizing: border-box;
+height: calc(100% - 42px);
 overflow: auto;
 `;
 

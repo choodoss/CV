@@ -2,15 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 overflow: auto;
-display:flex;
-flex-direction: column;
-gap: 20px;
 
-padding-top: 28px;
-padding-left: 28px;
-padding-bottom: 28px;
-padding-right: 28px;
-height: 90%;
+padding: 28px;
+height: calc(100% - 42px);
+box-sizing: border-box;
 @media screen and (max-width:1350px) {
       gap:15px;
     }
@@ -31,8 +26,8 @@ font-weight: 700;
 export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  column-gap: 40px;
-  row-gap: 30px;
+  justify-content: space-around;
+  gap: 30px;
   @media screen and (max-width:767px) {
 flex-direction: column;
 flex-wrap: nowrap;
@@ -46,6 +41,8 @@ gap:20px;
 export const Item = styled.li`
 flex-basis:calc((100% - (40px * 2)) / 3);
 overflow: hidden;
+display: flex;
+flex-direction: column;
 
 @media screen and (max-width:767px) {
     flex-basis:100%;
@@ -62,10 +59,9 @@ overflow: hidden;
 border-radius: 15px;
 border: 1px solid #1E2D3D;
 background: #011221;
-
+flex-grow: 1;
 display: flex;
 flex-direction: column;
-height: 85%;
 `;
 
 export const Img = styled.img`
@@ -77,13 +73,14 @@ width:100%;
 
 export const TextBody = styled.div`
 flex-grow: 1;
-display: inline-flex;
+display: flex;
 flex-direction: column;
 align-items: flex-start;
+justify-content: space-between;
 
 border-top: 1px solid #1E2D3D;
 padding:32px 24px;
-box-sizing:border-box;
+
 `;
 export const Text = styled.p`
 color: #607B96;
@@ -91,8 +88,9 @@ font-size: 18px;
 font-weight: 450;
 line-height: 1.5;
 margin-bottom:24px;
-flex-grow: 1;
+
 `;
+
 export const Link = styled.a`
 padding:10px 14px;
 color: #FFF;

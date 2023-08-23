@@ -35,7 +35,7 @@ const FilteredProjects = () => {
             <SubTitle text={'Projects'} />
             <Container>
                 <List>
-                    {(filters.length === 0 || filters.includes('HTML' || 'CSS')) && <Item>
+                    {(filters.length === 0 || (filters.includes('HTML') || filters.includes('CSS'))) && <Item>
                         <Title>Project 1 <SecondTitle>&#47;&#47; Web Studio</SecondTitle></Title>
                         <Body>
                             <Img src={pic1} alt="preview project 1" />
@@ -47,7 +47,7 @@ const FilteredProjects = () => {
                             {iconSass}
                         </Body>
                     </Item>}
-                    {(filters.length === 0 || filters.includes('HTML' || 'CSS')) && <Item>
+                    {(filters.length === 0 || (filters.includes('HTML') || filters.includes('CSS'))) && <Item>
                         <Title>Project 2 <SecondTitle>&#47;&#47; ICE CREAM</SecondTitle></Title>
                         <Body>
                             <Img src={pic2} alt="preview project 2" width="370" />
@@ -82,7 +82,7 @@ const FilteredProjects = () => {
                         </Body>
                     </Item>}
                     {(filters.length === 0 || filters.includes('React')) && <Item>
-                        <Title>Project 5<SecondTitle>&#47;&#47; CV</SecondTitle></Title>
+                        <Title>Project 5 <SecondTitle>&#47;&#47; CV</SecondTitle></Title>
                         <Body>
                             <Img src={pic5} alt="preview project 5" width="370" />
                             <TextBody>

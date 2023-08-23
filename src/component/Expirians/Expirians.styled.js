@@ -10,8 +10,9 @@ padding-top: 18px;
 padding-left: 28px;
 padding-bottom: 18px;
 padding-right: 28px;
-height: 90%;
-@media screen and (max-width:768px) {
+box-sizing: border-box;
+height: calc(100% - 42px);
+@media screen and (max-width:999px) {
 padding-left: 27px;
 padding-right: 27px;
 height: auto;
@@ -53,7 +54,7 @@ export const ExpList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 30px;
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:999px) {
     gap: 20px;
     }
 `;
@@ -63,7 +64,7 @@ export const Item = styled.li`
 export const PositionList = styled.ul`
   display: flex;
   gap: 30px;
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:999px) {
  display:block;
     }
 `;
@@ -83,14 +84,14 @@ padding: 24px;
 &:nth-child(odd){
     flex-basis: calc((30% - 30px));
     justify-content:center;
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:999px) {
   border-top: 1px solid #1E2D3D;
   border-bottom: none;
   border-radius: 15px 15px 0 0;
   padding: 15px;
     }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:999px) {
   border-top: none;
   border-radius:  0 0 15px 15px;
   padding: 10px 15px 15px;

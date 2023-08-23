@@ -23,7 +23,7 @@ padding-left:14px;
 padding-right:14px;
 padding-bottom:26px;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 999px) {
     padding-left: 27px;
   &.close {
     animation: none;

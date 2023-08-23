@@ -11,7 +11,7 @@ export const TitleIsHidden = styled.h2`
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:999px) {
         position: relative;
         width: auto;
         height: auto;
@@ -32,7 +32,7 @@ export const Section = styled.section`
 display: flex;
 color: #607B96;
 flex-grow: 1;
-@media screen and (max-width:768px) {
+@media screen and (max-width:999px) {
     display: block;
     }
 `;

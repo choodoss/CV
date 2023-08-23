@@ -7,7 +7,7 @@ export const Title = styled.span`
   align-items: center;
   padding: 10px 0;
   padding-left: 14px;
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:999px) {
     border-bottom: none;
     margin-bottom:7px;
     padding-left: 27px;

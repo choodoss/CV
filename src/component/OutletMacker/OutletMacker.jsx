@@ -10,7 +10,7 @@ export const outletMacker = (text) => {
 
     const charWidth = 13;
     let maxLength = Math.floor(((viewportWidth - 311) - (viewportWidth * 0.1)) / charWidth) - 6;
-    if (viewportWidth <= 768) {
+    if (viewportWidth <= 999) {
         maxLength = Math.floor((viewportWidth - (viewportWidth * 0.1)) / charWidth);
     }
     const result = [];

@@ -8,7 +8,7 @@ display: flex;
 align-items: center;
 padding:10px 0;
 padding-left:16px;
-@media screen and (max-width:768px) {
+@media screen and (max-width:999px) {
     border-bottom: none;
 background-color: #1E2D3D;
 padding:5px 0;
@@ -43,7 +43,7 @@ display:flex;
 align-items: center;
 margin-right: 10px;
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:999px) {
     margin-right: 12px;
         svg {
         transition: transform 0.4s ease;

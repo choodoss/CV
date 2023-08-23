@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
 display:none;
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:999px) {
     height:56px;
     width:100%;
 
@@ -14,14 +14,14 @@ display:none;
     }
 `;
 export const Author = styled.span`
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:999px) {
     color: #607B96;
     font-size: 16px;
     font-weight: 450;
     }
 `;
 export const MobMenuButton = styled.button`
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:999px) {
 background-color:inherit;
 color:#fff;
     }

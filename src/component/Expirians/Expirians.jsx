@@ -30,7 +30,7 @@ const Expirians = () => {
 
     return (
         <Box>
-            <SubTitle text={'expirians'} />
+            <SubTitle text={'experience'} />
             <Container>
                 <ExpList>
                     {result}
