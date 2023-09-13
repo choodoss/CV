@@ -18,31 +18,31 @@ const CvLayout = () => {
     const isMobileDevice = userWidth <= 999;
 
     return (
-        <>
-            <BoxWindow>
-                <Container>
-                    <Header>
-                        <Nav>
-                            <LinkList>
-                                <LinkItem><LinkName to="/">dmytro-khomenko</LinkName></LinkItem>
-                                <LinkItem><LinkPage to="/">_hello</LinkPage></LinkItem>
-                                <LinkItem><LinkPage to='/about-me'>_about-me</LinkPage></LinkItem>
-                                <LinkItem><LinkPage to='/projects'>_projects</LinkPage></LinkItem>
-                                <LinkItem><LinkPage to='/contact-me'>_contact-me</LinkPage></LinkItem>
-                            </LinkList>
-                            <MobHeader isMobMenu={isMobMenu} openMenu={hendleOpenMobMenu} />
-                        </Nav>
-                    </Header>
-                    {isMobMenu && <MobMenu closeMenu={hendleOpenMobMenu} />}
-                    {isMobMenu ? null : <Main>
-                        <Outlet />
-                    </Main >}
-                    {(isHomePage && isMobileDevice || isMobMenu) ? null : <Footer />}
-                </Container>
-            </BoxWindow >
-        </>
+        <BoxWindow>
+            <Container>
+                <Header>
+                    <Nav>
+                        <LinkList>
+                            <LinkItem><LinkName to="/">dmytro-khomenko</LinkName></LinkItem>
+                            <LinkItem><LinkPage to="/">_hello</LinkPage></LinkItem>
+                            <LinkItem><LinkPage to='/about-me'>_about-me</LinkPage></LinkItem>
+                            <LinkItem><LinkPage to='/projects'>_projects</LinkPage></LinkItem>
+                            <LinkItem><LinkPage to='/contact-me'>_contact-me</LinkPage></LinkItem>
+                        </LinkList>
+                        <MobHeader isMobMenu={isMobMenu} openMenu={hendleOpenMobMenu} />
+                    </Nav>
+                </Header>
+                {isMobMenu && <MobMenu closeMenu={hendleOpenMobMenu} />}
+                {isMobMenu ? null : <Main>
+                    <Outlet />
+                </Main >}
+                {(isHomePage && isMobileDevice) || isMobMenu ? null : <Footer />}
+            </Container>
+        </BoxWindow >
     );
 };
+
+
 
 export default CvLayout;
 

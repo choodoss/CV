@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
-height: 80lvh;
+height: calc(90lvh - 56px);
 
 display:flex;
 flex-direction:column;

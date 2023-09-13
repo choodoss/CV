@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const BoxWindow = styled.div`
-max-width: 1782px;
+max-width: none;
 padding: 5lvh;
 margin:0 auto;
 
