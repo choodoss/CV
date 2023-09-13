@@ -17,7 +17,7 @@ export const sendMessageToTelegram = async (text) => {
     try {
         const response = await fetch(apiUrl, requestOptions);
         const data = await response.json();
-        console.log("Response from Telegram API:", data);
+        // console.log("Response from Telegram API:", data);
     } catch (error) {
         console.error("Error when sending a message in Telegram:", error);
     }

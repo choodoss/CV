@@ -22,14 +22,14 @@ const openMenu = keyframes`
         opacity:0;
     }
     100% {
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
         opacity:1;
     }
 `;
 
 const closeMenu = keyframes`
     0% {
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
         opacity:0;
     }
     100% {
@@ -42,6 +42,7 @@ export const AnimationIcon = styled.div`
 display:flex;
 align-items: center;
 margin-right: 10px;
+transform: rotate(90deg);
 
 @media screen and (max-width:999px) {
     margin-right: 12px;
