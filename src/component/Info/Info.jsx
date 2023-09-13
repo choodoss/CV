@@ -16,7 +16,7 @@ const Info = () => {
             <TitleMenu color={'orange'} title={'bio'} />
             <TitleMenu color={'green'} title={'interests'} />
             <TitleMenu color={'blue'} title={'education'} />
-            <TitleMenu color={'violet'} title={'expirians'} />
+            <TitleMenu color={'violet'} title={'experience'} />
         </TitleMenuList>
     </>
 
