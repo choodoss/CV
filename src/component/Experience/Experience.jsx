@@ -1,6 +1,6 @@
-import { Container, Title, Description, DescriptionSpan, DateTime, Position, ExpList, Item, PositionList, ItemPosition } from "./Expirians.styled";
+import { Container, Title, Description, DescriptionSpan, DateTime, Position, ExpList, Item, PositionList, ItemPosition } from "./Experience.styled";
 import wrapperExpDescription from "./wrapperExpDescription";
-import data from './ExpiriansText.json'
+import data from './ExperienceText.json'
 import { nanoid } from "nanoid";
 import SubTitle from "../SubTitle/SubTitle";
 import Box from "../Box/Box";
