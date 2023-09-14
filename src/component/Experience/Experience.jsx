@@ -5,7 +5,7 @@ import { nanoid } from "nanoid";
 import SubTitle from "../SubTitle/SubTitle";
 import Box from "../Box/Box";
 
-const Expirians = () => {
+const Experience = () => {
 
     const result = data.items.map((i) => (
         <Item key={nanoid()}>
@@ -39,4 +39,4 @@ const Expirians = () => {
         </Box>)
 };
 
-export default Expirians;
+export default Experience;
