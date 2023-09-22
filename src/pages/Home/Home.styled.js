@@ -12,6 +12,7 @@ margin-bottom:80px;
 `;
 
 export const Container = styled.div`
+position: relative;
 height: 100%;
 margin-left:311px;
 display: flex;
