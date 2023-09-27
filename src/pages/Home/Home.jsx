@@ -21,7 +21,7 @@ const Home = () => {
                     <TextDownProfile>&#47;&#47; find my profile on Github:</TextDownProfile>
                     <TextDownProfile><TextViolet>const</TextViolet><TextGreen> githubLink = </TextGreen><LinkOrange aria-label="Repositories on GitHub" href="https://github.com/choodoss" target="_blank">https://github.com/choodoss</LinkOrange></TextDownProfile>
                 </MobTextList>
-                <TetrisGame />
+                {/* <TetrisGame /> */}
             </Container>
         </Section>)
 };
