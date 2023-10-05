@@ -10,14 +10,46 @@ height: 100%;
 export const HeadProfile = styled.div`
 margin-bottom:80px;
 `;
+export const HeadProfileBody = styled.div`
+
+`;
+export const Img = styled.img`
+  object-fit: cover;
+  
+`;
+export const ImgContainer = styled.div`
+flex: 0 1 40%;
+position: relative;
+
+&::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: -1px;
+    height: 70px;
+    width: 100%;
+    
+    background-image: linear-gradient(to top, rgba(1, 22, 39, 1) 0%, rgba(1, 22, 39, 0) 100%);
+
+  };
+@media screen and (max-width:999px) {
+display:none;
+    }
+`
 
 export const Container = styled.div`
 position: relative;
 height: 100%;
 margin-left:311px;
 display: flex;
-  flex-direction: column;
-  justify-content: center;
+align-items:center;
+gap:30px;
+  justify-content: space-between;
+  @media screen and (max-width:1200px) {
+    margin-left:0;
+    padding:0 54px;
+    }
   @media screen and (max-width:999px) {
     margin-left:0;
     padding:0 27px;
@@ -118,6 +150,7 @@ line-height: 1.4;
 
 export const Green = styled.div`
 position:absolute;
+z-index:3;
 top:9.6%;
 right:26.6%;
 width: 454px;
@@ -136,6 +169,7 @@ right:21.05%;
 `;
 
 export const Blue = styled(Green)`
+z-index:4;
 transform: rotate(13.508deg);
 top:28.5%;
 right:12.34%;
@@ -148,6 +182,7 @@ top:24.76%;
 right:-16.84%;
     }
 `;
+
 
 
 
