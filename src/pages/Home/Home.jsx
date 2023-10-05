@@ -25,7 +25,7 @@ const Home = () => {
                         <TextDownProfile><TextViolet>const</TextViolet><TextGreen> githubLink = </TextGreen><LinkOrange aria-label="Repositories on GitHub" href="https://github.com/choodoss" target="_blank">https://github.com/choodoss</LinkOrange></TextDownProfile>
                     </MobTextList>
                 </HeadProfileBody>
-                <ImgContainer><Img src={myPhoto} alt="preview project 1" /></ImgContainer>
+                <ImgContainer><Img src={myPhoto} alt="Photo of the developer" /></ImgContainer>
 
             </Container>
         </Section>)
