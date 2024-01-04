@@ -16,12 +16,12 @@ const Education = () => {
                 <EduBox>
                     <Title>Odessa National Academy of Telecommunications n.a. O.S. Popov</Title>
                     <Description>master's degree, <DescriptionSpan>Telecommunication systems and networks</DescriptionSpan></Description>
-                    <DateTime>2006-2008</DateTime>
+                    <DateTime>2011-2012</DateTime>
                 </EduBox>
                 <EduBox>
                     <Title>Odessa National Academy of Telecommunications n.a. O.S. Popov</Title>
                     <Description>bachelor degree, <DescriptionSpan>Telecommunication systems and networks</DescriptionSpan></Description>
-                    <DateTime>2004-2006</DateTime>
+                    <DateTime>2008-2011</DateTime>
                 </EduBox>
                 <EduBox>
                     <Title>Kyiv College of Communication</Title>
